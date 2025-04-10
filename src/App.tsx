@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react'
 import { calcularIR } from './calculair';
+import logo from './assets/logopmms.svg';
+import tempoContribHojeExemplo from './assets/tempo-contrib-hoje-exemplo.png';
+import tempoContribTotal from './assets/tempo-contrib-total.png';
 
 function App() {
   const [tempoAtual, setTempoAtual] = useState<number>(0);
@@ -22,7 +25,7 @@ function App() {
   return (
     <div id='app' className="app">
       <div id="cabecalho" className="cabecalho">
-        <img src="/logopmms.svg" alt="Logo PMMS" />
+        <img src={logo} alt="Logo PMMS" />
         <h1 className="titulo">Calculadora de Proventos Proporcionais</h1>
       </div>
 
@@ -41,14 +44,14 @@ function App() {
 
         <div className="imagem-explicativa">
           <span className="descricao">Anote o Tempo de contribuição hoje</span>
-          <img src="/tempo-contrib-hoje-exemplo.png" alt="tempo contribuição atual" className="imagem" />
+          <img src={tempoContribHojeExemplo} alt="tempo contribuição atual" className="imagem" />
         </div>
 
         <div className="imagem-explicativa">
           <span className="descricao">
             Abra o cálculo detalhado e anote o número de dias totais em Contribuição para reserva remunerada integral
           </span>
-          <img src="/tempo-contrib-total.png" alt="tempo total" className="imagem" />
+          <img src={tempoContribTotal} alt="tempo total" className="imagem" />
         </div>
 
         <p>Após isso, preencha os campos abaixo com os dados que você obteve na calculadora.</p>

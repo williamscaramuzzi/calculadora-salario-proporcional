@@ -95,6 +95,9 @@ body {
   gap: 16px;
 }
 
+.campo {
+  margin: 5px;
+}
 .campo label {
   display: block;
   font-size: 0.875rem;
@@ -106,12 +109,39 @@ body {
   width: 100%;
   padding: 4px;
   border: none;
+  font-size: large;
   border-bottom: 2px solid #d1d5db;
   background-color: transparent;
   color: white;
 }
 
 .campo input:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+.divSexo{
+  margin: 10px;
+}
+.radio-group-sexo{
+  display: flex;
+  margin: 10px;
+}
+.divDataInclusao label{
+  display: block;
+  font-size: 0.875rem;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+.divDataInclusao input{
+  width: 100%;
+  padding: 4px;
+  border: none;
+  font-size: large;
+  border-bottom: 2px solid #d1d5db;
+  background-color: transparent;
+  color: white;
+}
+.divDataInclusao input:focus{
   border-color: #3b82f6;
   outline: none;
 }

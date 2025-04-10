@@ -90,7 +90,7 @@ function App() {
       </div>
 
       <div className="calculadora-tempo-servico">
-        <h2 className="subtitulo">Calcule seu tempo de serviço</h2>
+        <h2 className="subtitulo">1º Passo: Calcule seu tempo de serviço</h2>
         <p>
           Se precisar de um cálculo mais detalhado, visite a <a
             href="https://sites.google.com/view/calculadora-rr"
@@ -169,6 +169,7 @@ function App() {
 
       <div className="formulario">
         <form className="form">
+        <h2 className="subtitulo">2º Passo: Simule o salário proporcional</h2>
           <div className="campo">
             <label>Tempo de serviço atual (dias)</label>
             <input

@@ -1,54 +1,22 @@
-# React + TypeScript + Vite
+# Calculadora Proporcional
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de uma calculadora de proventos proporcionais (para militares) desenvolvida com **Next.js**. O objetivo é mostrar uma estimativa de como vai ficar o salário do militar do Estado do Mato Grosso do Sul se ele resolver ir pra reserva com proventos proporcionais, já calculando sobre o novo tempo de serviço (com pedágios)
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Realizar cálculo de salário proporcional dos militares estaduais do MS.
+- Interface compatível com computador e celulares.
 
-## Expanding the ESLint configuration
+## Contribuição
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e enviar pull requests.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Licença
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Este projeto está licenciado sob a [MIT License](LICENSE).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Contato
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **Nome:** Major QOPM William Scaramuzzi Teixeira
+- **Email:** wsoficial1018@gmail.com
+- **GitHub:** [williamscaramuzzi](https://github.com/williamscaramuzzi)

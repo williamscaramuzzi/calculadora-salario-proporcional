@@ -11,13 +11,13 @@ function App() {
   const [descontoSaude, setDescontoSaude] = useState<number>(0);
   const [dependentes, setDependentes] = useState<number>(0);
 
-  // Cálculos derivados
+  // Lembrando que toda vez que usa um setState, a página inteira é reconstruída
+  // e o valor do estado é atualizado, então não precisa usar useEffect para isso
   const fracao = tempoTotal > 0 ? tempoAtual / tempoTotal : 0;
   const salarioProporcionalBruto = fracao * salario;
   const descontoPrev = salarioProporcionalBruto * 0.105;
   const descontoIR = calcularIR(salarioProporcionalBruto - descontoPrev, dependentes);
-  const salarioProporcionalLiquido =
-    salarioProporcionalBruto - descontoPrev - descontoIR - descontoSaude;
+  const salarioProporcionalLiquido = salarioProporcionalBruto - descontoPrev - descontoIR - descontoSaude;
 
   return (
     <div id="app" className="app">

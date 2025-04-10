@@ -14,6 +14,10 @@ body {
   align-items: center;
   width: 100%;
 }
+#logo-pmms{
+  width: 10vw;
+  min-width: 90px;
+}
 
 .titulo {
   color: white;
@@ -120,6 +124,10 @@ body {
 .rodape {
   background-color: #1f2937;
   width: 100%;
-  padding: 16px 0;
+  padding: 16px;
   color: white;
+}
+
+.rodape p {
+  margin: 0;
 }

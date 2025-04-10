@@ -22,7 +22,7 @@ function App() {
   return (
     <div id="app" className="app">
       <div id="cabecalho" className="cabecalho">
-        <img src={logo} alt="Logo PMMS" />
+        <img id='logo-pmms' src={logo} alt="Logo PMMS" />
         <h1 className="titulo">Calculadora de Proventos Proporcionais</h1>
       </div>
 
@@ -33,6 +33,8 @@ function App() {
           <a
             href="https://sites.google.com/view/calculadora-rr"
             className="link"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Calculadora de Reserva Remunerada
           </a>{' '}

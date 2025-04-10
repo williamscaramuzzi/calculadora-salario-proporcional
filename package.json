@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://williamscaramuzzi.github.io/next-calculadoraproporcional",
+  "homepage": "https://williamscaramuzzi.github.io/calculadora-salario-proporcional/",
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

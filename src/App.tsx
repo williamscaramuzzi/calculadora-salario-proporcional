@@ -48,7 +48,7 @@ function App() {
     let anosFaltantesMilitar = tempoFaltanteMilitar / 365;
     console.log("anosFaltantesMilitar", anosFaltantesMilitar)
     let diasParaAcrescentar = Math.floor(anosFaltantesMilitar * 120);
-    if(diasParaAcrescentar>1825) diasParaAcrescentar = 1825; //limite de 5 anos para pedagio militar
+    if (diasParaAcrescentar > 1825) diasParaAcrescentar = 1825; //limite de 5 anos para pedagio militar
     console.log("diasparaAcrescentar", diasParaAcrescentar)
     let diasDeServicoMilitarMinimoTotais = Math.floor(DIAS_EM_25_ANOS + diasParaAcrescentar);
 
@@ -89,8 +89,18 @@ function App() {
         <h1 className="titulo">Calculadora de Proventos Proporcionais</h1>
       </div>
 
-      <div className="bloco-principal">
+      <div className="calculadora-tempo-servico">
         <h2 className="subtitulo">Calcule seu tempo de serviço</h2>
+        <p>
+          Se precisar de um cálculo mais detalhado, visite a <a
+            href="https://sites.google.com/view/calculadora-rr"
+            className="link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Calculadora de Reserva Remunerada
+          </a>{' '} criada pelo Sargento BM Kleyton Ribeiro.
+        </p>
         <div className="formulario-dados">
           <div className="campo">
             <label>Averbação de tempo militar (dias)</label>
@@ -152,7 +162,8 @@ function App() {
               placeholder="dd/mm/aaaa"
             />
           </div>
-          <button onClick={handleCalcularTempo}>Calcular tempo</button>
+          <button id='botao-calcular' onClick={handleCalcularTempo}>Calcular tempo</button>
+          <p>Prossiga abaixo para calcular o salário proporcional</p>
         </div>
       </div>
 

@@ -26,9 +26,8 @@ body {
   margin-left: 16px;
 }
 
-.bloco-principal {
-  text-align: justify;
-  max-width: 940px;
+.calculadora-tempo-servico {
+  max-width: 640px;
   margin: 40px auto;
   padding: 24px;
   background-color: #1f2937;
@@ -144,6 +143,10 @@ body {
 .divDataInclusao input:focus{
   border-color: #3b82f6;
   outline: none;
+}
+#botao-calcular{
+  font-size: large;
+  margin: 10px;
 }
 
 .resultado p {

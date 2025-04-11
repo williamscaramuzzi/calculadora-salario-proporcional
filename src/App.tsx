@@ -115,13 +115,13 @@ function App() {
           </div>
 
           <div className="campo">
-            <label>Averbação de tempo civil (em dias, máx 1825 que totalizam 5 anos)</label>
+            <label>Averbação de tempo civil (dias)</label>
             <input
               type="number"
               min={0}
               value={tempoCivilFora}
               onFocus={(e) => e.target.select()}
-              onChange={(e) => setTempoCivilFora(Number(e.target.value) > 1825 ? 1825 : Number(e.target.value))}
+              onChange={(e) => setTempoCivilFora(Number(e.target.value))}
             />
           </div>
 
